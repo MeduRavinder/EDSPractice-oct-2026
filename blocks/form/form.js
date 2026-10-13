@@ -139,7 +139,7 @@ function createButton(fd) {
   button.dataset.redirect = fd.Extra || '';
   button.id = fd.Id;
   button.name = fd.Name;
-  button.addEventListener('click', nextFunc);
+  button.addEventListener("click", nextFunc);
   wrapper.replaceChildren(button);
   return wrapper;
 }
@@ -350,7 +350,7 @@ async function createForm(formURL) {
     if (input) {
       input.id = fd.Id;
       input.name = fd.Name;
-      // input.value = fd.Value;
+     // input.value = fd.Value;
       input.Placeholder = fd.Placeholder;
       if (fd.Description) {
         input.setAttribute('aria-describedby', `${fd.Id}-description`);
@@ -370,7 +370,7 @@ async function createForm(formURL) {
   addActiveClassToFirstFieldset(form);
   return form;
 }
-// new function for adding active class to the first fieldset
+//new function for adding active class to the first fieldset
 function addActiveClassToFirstFieldset(form) {
   const firstfieldset = form.querySelector('fieldset');
   if (firstfieldset) {
