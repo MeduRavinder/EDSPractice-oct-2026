@@ -21,14 +21,12 @@
 .form form fieldset .selection-wrapper + .selection-wrapper {
   margin-top: 0.25em;
 }
-
-.section.two-col-form h2 {
+.section.two-col-form h2{
   font-size: 2.08333vw;
-  color: #cf2230;
-  font-family: GillSans-SemiBold;
-  text-align: center;
+    color: #cf2230;
+    font-family: GillSans-SemiBold;;
+    text-align: center;
 }
-
 @media (width >= 600px) {
   .form fieldset {
     grid-template-columns: repeat(2, auto);
@@ -46,32 +44,27 @@
   .form fieldset {
     grid-template-columns: repeat(3, auto);
   }
-
   .section.two-col-form.form-container {
     max-width: 1700px;
     margin: 0 auto;
     width: 66.66667%;
-  }
-
-  .section.two-col-form.form-container form {
+}
+  .section.two-col-form.form-container  form{
     display: flex;
     flex-wrap: wrap;
   }
-
-  .section.two-col-form.form-container .form .field-wrapper {
+  .section.two-col-form.form-container  .form .field-wrapper {
     display: block;
     width: 50%;
-    margin-top: 30px;
-    padding: 0;
-  }
-
-  .section.two-col-form.form-container .form .field-wrapper.form-submit {
+    margin-top:30px;
+    padding: 0;    
+  }  
+  .section.two-col-form.form-container  .form .field-wrapper.form-submit {
     width: 100%;
   }
-
-  .section.two-col-form.form-container .form .field-wrapper.form-checkbox-wrapper {
+  .section.two-col-form.form-container  .form .field-wrapper.form-checkbox-wrapper{
     width: 100%;
-  }
+ }
 }
 
 .form label,
@@ -148,7 +141,6 @@
   color: firebrick;
   margin-inline-start: 0.5ch;
 }
-
 .form .form-checkbox-wrapper.field-wrapper[data-required] label::after {
   content: none;
 }
@@ -200,7 +192,7 @@
   transform: translateX(24px);
 }
 
-.section.two-col-form.form-container .form label {
+.section.two-col-form.form-container  .form label{
   display: block;
   font-size: 16px;
   line-height: 24px;
@@ -208,7 +200,6 @@
   font-weight: normal;
   margin-bottom: 8px;
 }
-
 .section.two-col-form.form-container .form input {
   border: 0;
   border-bottom: 1px solid #e1e1e1;
@@ -216,18 +207,15 @@
   height: 35px;
   color: #000;
   font-size: 14px;
-  line-height: 22px;
+  line-height: 22px;  
 }
-
 .section.two-col-form.form-container .form input:focus {
   outline: none;
   outline-offset: 0;
 }
-
 .section.two-col-form.form-container .form input::-webkit-input-placeholder {
   color: #6e6e6e;
 }
-
 .section.two-col-form.form-container .form .form-checkbox-wrapper input {
   position: absolute;
   left: 15px;
@@ -235,17 +223,14 @@
   width: 17px;
   height: 17px;
 }
-
 .section.two-col-form.form-container .form .field-wrapper {
   padding: 0 15px;
   position: relative;
   display: block;
 }
-
 .section.two-col-form.form-container .form .field-wrapper.form-privacy {
   margin-top: 15px;
 }
-
 .section.two-col-form.form-container .form .form-checkbox-wrapper label {
   width: 100%;
   padding-left: 30px;
@@ -253,12 +238,10 @@
   line-height: 18px;
   font-family: GillSans-regular;
 }
-
 .form-submit {
   width: 100%;
   text-align: center;
 }
-
 .form-submit .btn {
   background-color: #cf2230;
   padding: .52083vw 1.5625vw;
@@ -269,14 +252,10 @@
   font-family: roboto-medium;
   transition: all 1s linear;
 }
-
-.form-submit .btn:hover,
-.form-submit .btn:active,
-.form-submit .btn:focus {
+.form-submit .btn:hover, .form-submit .btn:active, .form-submit .btn:focus {
   background-color: #000;
 }
-
-input[type='date']::-webkit-calendar-picker-indicator {
+input[type="date"]::-webkit-calendar-picker-indicator {
   color: rgba(0, 0, 0, 0);
   opacity: 1;
   display: block;
@@ -285,11 +264,11 @@ input[type='date']::-webkit-calendar-picker-indicator {
   height: 20px;
   background-position: 95% 50%;
   background-size: 20px;
+  background-position: 95% 50%;
 }
-
-@media (min-width: 1024px) {
-  .form-submit .btn {
-    font-size: 1.04167vw;
+@media (min-width:1024px){
+  .form-submit .btn{
+    font-size:1.04167vw;
   }
 }
 
@@ -301,135 +280,117 @@ input[type='date']::-webkit-calendar-picker-indicator {
 }
 
 @media (max-width: 767px) {
-  .section.two-col-form.form-container {
-    width: 100%;
-  }
-
-  .section.two-col-form h2,
-  .tab-section h2 {
-    padding-bottom: 11.11111vw;
-    font-size: 7.22222vw;
-  }
-
-  .emi-calculator .columns > div > div > p:first-child {
-    font-size: 5vw;
-  }
-
-  .emi-calculator .columns > div > div > h4 {
-    font-size: 6.66667vw;
-    padding-top: 4.44444vw;
-  }
-
-  .emi-calculator .columns > div > div:last-child p {
-    font-size: 6.66667vw;
-  }
-
-  .emi-calculator .columns > div > div:last-child h3 {
-    font-size: 7.77778vw;
-  }
-
-  .emi-calculator .columns {
-    width: 100%;
-  }
-
-  .form-submit .btn {
-    border-radius: 3px;
-    font-size: 14px;
-    padding: 5px 10px;
+      .section.two-col-form.form-container {
+        width: 100%;
+      }
+      .section.two-col-form h2, .tab-section h2{
+        padding-bottom: 11.11111vw;
+            font-size: 7.22222vw ;
+      }
+      .emi-calculator .columns > div > div > p:first-child{
+        font-size: 5vw;
+         
+      }
+      .emi-calculator .columns > div > div > h4{
+      font-size: 6.66667vw;
+      padding-top: 4.44444vw;
+      }
+      .emi-calculator .columns > div > div:last-child  p{
+        font-size: 6.66667vw;
+      }
+      .emi-calculator .columns > div > div:last-child  h3{
+        font-size: 7.77778vw;
+      }
+      .emi-calculator .columns {
+        width: 100%;
+      }
+      .form-submit .btn{
+        border-radius: 3px;
+        font-size: 14px;
+        padding: 5px 10px;
   }
 }
+
 
 /* Test Drive form */
 .section.two-col-form.test-drive-form {
   max-width: 1300px;
   margin: 0 auto;
   width: 100%;
-  margin-bottom: 60px;
+  margin-bottom:60px;
 }
-
-.section.two-col-form.test-drive-form > div {
+.section.two-col-form.test-drive-form > div{
   padding-inline: 12px;
   max-width: 100%;
   margin: 0;
 }
-
 .test-drive-form {
   display: grid;
   grid-column-gap: 24px;
   grid-template-columns: repeat(2, 1fr);
 }
-
-.test-drive-form div:nth-child(1) {
+.test-drive-form div:nth-child(1){
   grid-column: 2/3;
   grid-row: 1/2;
 }
-
-.test-drive-form div:nth-child(2) {
+.test-drive-form div:nth-child(2){
   grid-column: 1/2;
   grid-row: 2/3;
-}
 
-.test-drive-form div:nth-child(3) {
+}
+.test-drive-form div:nth-child(3){
   display: none;
 }
-
-.test-drive-form div:nth-child(4) {
-  grid-column: 2/3;
+.test-drive-form div:nth-child(4){
+  grid-column: 2/3; 
   grid-row: 2/3;
 }
-
-.test-drive-form div:nth-child(5) {
+.test-drive-form div:nth-child(5){
   grid-column: 2/4;
   grid-row: 3/4;
 }
-
-.test-drive-form div:nth-child(6) {
+.test-drive-form div:nth-child(6){
   grid-column: 2/4;
   grid-row: 5/6;
 }
+.test-drive-form .columns-wrapper .testdrive-formtext div div h2{
+ text-align: left;
+ font-weight: 500;
+ margin-bottom: 20px;
 
-.test-drive-form .columns-wrapper .testdrive-formtext div div h2 {
-  text-align: left;
-  font-weight: 500;
-  margin-bottom: 20px;
 }
-
-.test-drive-form .columns-wrapper .testdrive-formtext div div h2 + p {
+.test-drive-form .columns-wrapper .testdrive-formtext div div h2 + p{
   font-family: roboto;
   font-size: 1.042vw;
-  margin: 0;
-}
+  margin:0;
+ }
 
-.test-drive-form div:nth-child(5) .columns div div > p,
-.test-drive-form div:nth-child(3) .columns div div > p,
-.test-drive-form div:nth-child(4) .columns-wrapper .columns div div > p {
+.test-drive-form div:nth-child(5) .columns div div > p , .test-drive-form div:nth-child(3) .columns div div > p , .test-drive-form div:nth-child(4) .columns-wrapper .columns div div > p {
   display: flex;
   align-items: center;
-  gap: 30px;
-  border-bottom: 2px solid #afc2e3;
+  gap: 30px; 
+  border-bottom: 2px solid #afc2e3; 
   padding-bottom: 20px;
   margin-top: 48px;
   font-family: GillSans-regular;
   font-size: 19.2px;
   font-weight: 400;
   line-height: 1.5;
-  margin-bottom: 0;
+  margin-bottom:0;
+  
 }
-
-.test-drive-form .columns-wrapper .columns div div p span svg {
+.test-drive-form .columns-wrapper .columns div div p span svg{
   width: 40.3px;
   height: 29.29px;
 }
-
-.test-drive-form .form-wrapper .form div div p {
-  margin-block: 0;
+.test-drive-form .form-wrapper .form div div p{
+  margin-block:0;
 }
-
 /* form */
-.test-drive-form div:nth-child(6) .form-select-wrapper select {
-  appearance: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
+.test-drive-form div:nth-child(6) .form-select-wrapper select{
+  appearance: none; 
+  -webkit-appearance: none; 
+  -moz-appearance: none; 
   border: none;
   border-bottom: 1px solid #e1e1e1;
   border-radius: 0;
@@ -439,42 +400,34 @@ input[type='date']::-webkit-calendar-picker-indicator {
   background: url('../../icons/chevron_right.svg') no-repeat 100%, #fff;
   background-size: 30px 8px !important;
   padding-right: 30px;
-  font-size: 14px;
+  font-size:14px;
   color: #131313;
-  font-family: roboto;
+  font-family:roboto;
 }
-
-.section.two-col-form.test-drive-form div:nth-child(6) .form .field-wrapper {
+.section.two-col-form.test-drive-form div:nth-child(6)  .form .field-wrapper{
   padding-right: 30px;
-}
-
-.section.two-col-form.test-drive-form .form .field-wrapper {
+} 
+.section.two-col-form.test-drive-form .form .field-wrapper{
   padding-inline: 0;
 }
-
 .section.two-col-form.test-drive-form .form label {
   font-family: GillSans-regular;
   font-size: 1pc;
   margin-bottom: 0.5rem;
 }
-
-.section.two-col-form.test-drive-form .form .form-checkbox-wrapper input {
-  left: 0;
+.section.two-col-form.test-drive-form .form .form-checkbox-wrapper input{
+left: 0;
 }
-
 .section.two-col-form.test-drive-form .form .field-wrapper.form-authorise {
   margin-top: 10px;
 }
-
 .section.two-col-form.test-drive-form .form .field-wrapper.form-privacy {
   margin-top: 10px;
   display: none;
 }
-
-.section.two-col-form.test-drive-form .form .form-submit {
-  text-align: left;
+.section.two-col-form.test-drive-form .form .form-submit{
+text-align: left;
 }
-
 /* OTP */
 .section.two-col-form.test-drive-form .form div div p form fieldset.field-wrapper legend {
   font-size: 1pc;
@@ -482,17 +435,14 @@ input[type='date']::-webkit-calendar-picker-indicator {
   width: 100%;
   font-weight: normal;
 }
-
 .section.two-col-form.test-drive-form .form div div p form {
   position: relative;
 }
-
-.section.two-col-form.test-drive-form .form div div p form fieldset.field-wrapper {
+.section.two-col-form.test-drive-form .form div div p form fieldset.field-wrapper{
   display: flex;
-  margin: 30px 0;
+  margin: 30px 0 30px 0;
   width: 50%;
 }
-
 .section.two-col-form.test-drive-form .form div div p form fieldset.field-wrapper::before {
   content: 'Get OTP';
   display: inline-block;
@@ -508,10 +458,10 @@ input[type='date']::-webkit-calendar-picker-indicator {
   right: -28%;
   top: 50%;
   transform: translateY(-50%);
-}
 
+}
 .section.two-col-form.test-drive-form .form div div p form fieldset.field-wrapper::after {
-  content: 'OTP will be sent on both mobile and email';
+  content: 'OTP will be sent on both mobile and email';  
   display: inline-block;
   position: absolute;
   left: 131%;
@@ -521,134 +471,117 @@ input[type='date']::-webkit-calendar-picker-indicator {
   color: #6e6e6e;
   width: 100%;
 }
-
-.section.two-col-form.test-drive-form .form div div p form fieldset.field-wrapper > div.field-wrapper {
+.section.two-col-form.test-drive-form .form div div p form fieldset.field-wrapper > div.field-wrapper{
   margin-top: 0;
 }
-
 @media (max-width: 1200px) {
   .section.two-col-form.test-drive-form .form div div p form fieldset.field-wrapper::after {
-    left: 145%;
+    left: 145%;  
   }
-
   .section.two-col-form.test-drive-form .form div div p form fieldset.field-wrapper::before {
     right: -40%;
   }
+
 }
 
 @media (max-width: 991px) {
   .section.two-col-form.test-drive-form .form div div p form fieldset.field-wrapper::before {
     font-size: 1.613vw;
   }
-
-  .test-drive-form .form-wrapper .form {
-    margin-top: 30px;
+.test-drive-form .form-wrapper .form{
+    margin-top:30px;
   }
-
   .test-drive-form {
-    display: block;
+    display:block;
   }
-
-  .test-drive-form div:nth-child(3) {
+  .test-drive-form div:nth-child(3){
     display: block;
+  
   }
-
-  .test-drive-form .columns-wrapper .testdrive-formtext div div h2 {
+  .test-drive-form .columns-wrapper .testdrive-formtext div div h2{
     padding-bottom: 0;
-  }
-
-  .test-drive-form div:nth-child(4) .columns-wrapper {
+   }
+   .test-drive-form div:nth-child(4) .columns-wrapper{
     display: none;
-  }
-
-  .test-drive-form .columns-wrapper .testdrive-formtext div div h2 {
+   }
+   .test-drive-form .columns-wrapper .testdrive-formtext div div h2{
     font-size: 4.036vw;
   }
-
-  .test-drive-form .columns-wrapper .testdrive-formtext div div h2 + p {
+  .test-drive-form .columns-wrapper .testdrive-formtext div div h2 + p{
     font-size: 2.018vw;
-  }
-
-  .section.two-col-form.test-drive-form .form div div p form fieldset.field-wrapper {
+  } 
+    /* otp */
+  .section.two-col-form.test-drive-form .form div div p form fieldset.field-wrapper{
     width: 70%;
     margin-bottom: 60px;
   }
-
   .section.two-col-form.test-drive-form .form div div p form fieldset.field-wrapper::before {
     right: -30%;
   }
 
   .section.two-col-form.test-drive-form .form div div p form fieldset.field-wrapper::after {
-    left: 50%;
+    left:50%;
     display: block;
     top: 120%;
     padding-bottom: 60px;
   }
-}
 
+}
 @media (max-width: 768px) {
-  .test-drive-form .columns-wrapper .testdrive-formtext div div h2 {
+  .test-drive-form .columns-wrapper .testdrive-formtext div div h2{
     font-size: 27px;
   }
-
   .section.two-col-form.test-drive-form .form div div p form fieldset.field-wrapper::before {
     font-size: 2.778vw;
   }
-
-  .test-drive-form .columns-wrapper .testdrive-formtext div div h2 + p {
+  .test-drive-form .columns-wrapper .testdrive-formtext div div h2 + p{
     font-size: 15.533px;
   }
-
-  .test-drive-form div:nth-child(5) .columns div div > p,
-  .test-drive-form div:nth-child(3) .columns div div > p,
-  .test-drive-form div:nth-child(4) .columns-wrapper .columns div div > p {
+  .test-drive-form div:nth-child(5) .columns div div > p , .test-drive-form div:nth-child(3) .columns div div > p , .test-drive-form div:nth-child(4) .columns-wrapper .columns div div > p {
     margin-top: 30px;
-  }
-
-  .section.two-col-form.test-drive-form .form .form-submit {
+  } 
+  .section.two-col-form.test-drive-form .form .form-submit{
     text-align: center;
-  }
+ 
+    }
+    .section.two-col-form.test-drive-form .form .form-submit .btn{
+      border-radius: 3px;
+      font-size: 14px;
+      padding: 5px 10px;
+    }
 
-  .section.two-col-form.test-drive-form .form .form-submit .btn {
-    border-radius: 3px;
-    font-size: 14px;
-    padding: 5px 10px;
-  }
 }
 
-/* form container query */
+/* form conatiner query */
 @media (min-width: 576px) {
-  main > .section.two-col-form.test-drive-form {
-    max-width: 540px;
+  main > .section.two-col-form.test-drive-form{
+      max-width: 540px;
   }
 }
-
 @media (min-width: 768px) {
-  main > .section.two-col-form.test-drive-form {
-    max-width: 45pc;
+  main > .section.two-col-form.test-drive-form{
+      max-width: 45pc;
   }
-}
 
+}
 @media (min-width: 992px) {
-  main > .section.two-col-form.test-drive-form {
-    max-width: 60pc;
+  main > .section.two-col-form.test-drive-form{
+      max-width: 60pc;
   }
 }
-
 @media (min-width: 1200px) {
-  main > .section.two-col-form.test-drive-form {
-    max-width: 855pt;
+  main > .section.two-col-form.test-drive-form{
+      max-width: 855pt;
   }
 }
-
 @media (min-width: 1500px) {
-  main > .section.two-col-form.test-drive-form {
-    max-width: 975pt;
+  main > .section.two-col-form.test-drive-form{
+      max-width: 975pt;
   }
 }
 
 @media (max-width: 991px) {
-  .section.two-col-form h2 {
+  .section.two-col-form h2{
     font-size: 3.02725vw;
   }
 }
