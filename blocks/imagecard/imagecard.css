@@ -1,108 +1,93 @@
 .imagecard {
-  display: flex;
-  align-items: center;
-  gap: 60px;
-  padding: 80px 5%;
-  max-width: 1400px;
+  max-width: 900px;
   margin: 0 auto;
-  background: #fff;
+  padding: 60px 20px;
 }
 
-.imagecard-image {
-  flex: 1;
-}
-
-.imagecard-image img {
-  width: 100%;
-  height: auto;
+/* Image */
+.imagecard picture,
+.imagecard img {
   display: block;
-  border-radius: 4px;
+  width: 100%;
+  max-width: 430px;
+  margin: 0 auto 40px;
 }
 
-.imagecard-content {
-  flex: 1;
+.imagecard img {
+  height: auto;
+  object-fit: cover;
 }
 
-.imagecard-content h2 {
-  font-size: 48px;
+/* Heading */
+.imagecard h1,
+.imagecard h2 {
+  font-size: 52px;
+  font-weight: 700;
   line-height: 1.2;
-  font-weight: 500;
-  color: #333;
-  margin-bottom: 25px;
+  color: #000;
+  margin-bottom: 24px;
 }
 
-.imagecard-content p {
+/* Description */
+.imagecard p {
   font-size: 18px;
   line-height: 1.8;
-  color: #555;
+  color: #222;
   margin-bottom: 30px;
 }
 
-.imagecard-content ul {
-  list-style: none;
-  padding: 0;
-  margin: 0 0 35px;
+/* List */
+.imagecard ul {
+  margin: 0;
+  padding-left: 30px;
 }
 
-.imagecard-content li {
-  position: relative;
-  padding-left: 35px;
-  margin-bottom: 20px;
-  font-size: 22px;
-  color: #222;
-}
-
-.imagecard-content li::before {
-  content: '✓';
-  position: absolute;
-  left: 0;
-  top: 0;
+.imagecard li {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.8;
   color: #000;
-  font-weight: bold;
+  margin-bottom: 10px;
 }
 
-.imagecard-btn {
+/* Optional button styling if added later */
+.imagecard a.button,
+.imagecard .button {
   display: inline-block;
-  padding: 16px 40px;
-  background: #1565d8;
+  margin-top: 20px;
+  padding: 14px 32px;
+  background: #0057d9;
   color: #fff;
   text-decoration: none;
-  border-radius: 50px;
-  font-size: 20px;
-  font-weight: 500;
-  transition: all 0.3s ease;
+  border-radius: 30px;
 }
 
-.imagecard-btn:hover {
-  background: #0d4db3;
-  transform: translateY(-2px);
-}
-
-@media (max-width: 992px) {
-  .imagecard {
-    gap: 30px;
-  }
-
-  .imagecard-content h2 {
-    font-size: 36px;
-  }
-}
-
+/* Tablet */
 @media (max-width: 768px) {
-  .imagecard {
-    flex-direction: column;
-    padding: 50px 20px;
+  .imagecard h1,
+  .imagecard h2 {
+    font-size: 38px;
   }
 
-  .imagecard-content h2 {
-    font-size: 30px;
-  }
-
-  .imagecard-content p {
+  .imagecard p,
+  .imagecard li {
     font-size: 16px;
   }
 
-  .imagecard-content li {
-    font-size: 18px;
+  .imagecard picture,
+  .imagecard img {
+    max-width: 100%;
+  }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  .imagecard {
+    padding: 40px 15px;
+  }
+
+  .imagecard h1,
+  .imagecard h2 {
+    font-size: 30px;
   }
 }
